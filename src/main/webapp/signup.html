@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+<script src="validate.js"></script>
+<title>Register</title>
+</head>
+<body>
+	<div class="container" style="padding-top:20px">
+		<div class="panel panel-primary padding-top-20">
+			<div class="panel-heading">Registration Form</div>
+			<div class="panel-body">
+				<form method="post" id="registerform" action="success.html">
+					
+					<div class="row"  style="padding-top:10px">
+						<label for="userName" class="col-md-4 control-label">User Name:</label>
+						<div class="col-md-8">
+							<input type="text" id="userName" class="form-control" placeholder="Enter User Name" required />
+						</div>
+					</div>
+					<div class="row" style="padding-top:10px">
+						<label for="password" class="col-md-4 control-label">Password:</label>
+						<div class="col-md-8">
+							<input type="password" id="password" class="form-control" placeholder="Enter Password" required />
+						</div>
+					</div>
+					<div class="row" style="padding-top:10px">
+						<label for="confirmPassword" class="col-md-4 control-label">Confirm Password</label>
+						<div class="col-md-8 ">
+							<input type="password" id="confirmPassword" class="form-control" placeholder="Re-Enter Password" required />
+						</div>
+					</div>
+					<div class="row"  style="padding-top:10px">
+						<label for="firstName" class="col-md-4 control-label">First Name:</label>
+						<div class="col-md-8">
+							<input type="text" id="firstName" class="form-control" placeholder="Enter First Name"  required/>
+						</div>
+					</div>
+					<div class="row"  style="padding-top:10px">
+						<label for="lastName" class="col-md-4 control-label">Last Name:</label>
+						<div class="col-md-8">
+							<input type="text" id="lastName" class="form-control" placeholder="Enter Last Name" required />
+						</div>
+					</div>
+					<div class="row"  style="padding-top:10px">
+						<label for="fullName" class="col-md-4 control-label ">Full Name:</label>
+						<div class="col-md-8">
+							<input type="text" id="fullName" class="form-control" disabled/>
+						</div>
+					</div>
+					<div class="row"  style="padding-top:10px">
+						<label for="email" class="col-md-4 control-label ">Email Id:</label>
+						<div class="col-md-8">
+							<input type="email" id="email" class="form-control" placeholder="Enter Email ID" required/>
+						</div>
+					</div>
+					<div class="row" style="padding-top:10px">
+						<div class="col-md-offset-4 col-md-8">
+							<div class="col-md-4">
+								<button class="btn btn-success" onclick="validate()">Register</button>
+							</div>
+							<div class="col-md-4">
+								<button class="btn btn-danger"  onclick="window.location.href='home.html'">Cancel</button>
+							</div>
+							<div class="col-md-4">
+								<button class="btn btn-warning" type="reset">Reset</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
